@@ -1,0 +1,56 @@
+.conteudo {
+  padding: 50px;
+
+  margin: 20px 10rem;
+  display: flex;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+
+  max-width: 40rem;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+}
+
+.imgProfile {
+  height: 128px;
+  width: 128px;
+  border: 2px solid #000000;
+  border-radius: 64px;
+}
+
+.about {
+  display: grid;
+  place-items: center;
+}
+
+.projetos {
+  padding: 50px;
+
+  margin: 20px 10rem;
+  display: flex;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+
+  max-width: 40rem;
+}
+.repositorio {
+  font-size: 38px;
+  color: #000000;
+  margin: 12px 0;
+  text-align: center;
+}
