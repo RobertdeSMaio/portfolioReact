@@ -13,7 +13,7 @@ function Header() {
               <a
                 href="https://api.whatsapp.com/send?phone=22992843155"
                 target="_blank"
-                rel="whatsapp"
+                rel="noreferrer"
               >
                 Contato
               </a>
@@ -22,7 +22,7 @@ function Header() {
               <a
                 href="https://linkedin.com/in/robert-de-s-maio"
                 target="_blank"
-                rel="linkedin"
+                rel="noreferrer"
               >
                 Sobre
               </a>
@@ -31,7 +31,7 @@ function Header() {
               <a
                 href="https://github.com/RobertdeSMaio"
                 target="_blank"
-                rel="github"
+                rel="noreferrer"
               >
                 GitHub
               </a>

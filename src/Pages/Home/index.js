@@ -46,7 +46,7 @@ function App() {
         <div className="conteudo">
           <img
             className="imgProfile"
-            src="https://avatars.githubusercontent.com/u/169686599?v=4"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQGNdO34AacrVA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714662320090?e=1734566400&v=beta&t=WaIMCK0t2ijYvuRIfGO5QqvmKd6gEkmaP8dJM4LKfv0"
             alt="profileImg"
           ></img>
           <h3>Sobre Mim</h3>
