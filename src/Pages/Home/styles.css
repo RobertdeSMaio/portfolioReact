@@ -104,7 +104,33 @@ h3 {
   }
 
   .repositorio {
-    font-size: 16px; /* Diminuir a fonte para melhor legibilidade */
-    margin: 4px 0; /* Ajuste a margem para reduzir espaço */
+    font-size: 16px;
+    margin: 4px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem 1px;
+  }
+
+  .conteudo {
+    width: auto;
+    height: 35rem;
+    align-items: center;
+    flex-flow: column;
+    max-width: 40rem;
+  }
+
+  .projetos {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 1px;
+  }
+  .repositorio {
+    width: auto;
+    font-size: 16px;
+    margin: 6px 0;
   }
 }
