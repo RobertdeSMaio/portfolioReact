@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Header } from "../../components/Header/index.tsx";
-import ItemList from "../../components/ItemList/index.tsx";
+import { Header } from "../../components/Header";
+import ItemList from "../../components/ItemList";
 import "./styles.css";
 
-function App() {
+export default function App() {
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -71,23 +71,39 @@ function App() {
             especializado. Minha base técnica foi construída através de
             experiências em Field Service, Automação e Administração de Redes,
             gerenciando ambientes Windows/Linux, servidores e ferramentas como
-            Active Directory e ERP TOTVS (Consinco). Essa bagagem me permite ter
-            uma visão 360° do ciclo de vida de um software, desde a
-            infraestrutura até a experiência do usuário final. Diferencial
-            Militar: Servi por 4 anos no Exército Brasileiro, onde consolidei
-            competências críticas de liderança, disciplina rigorosa, resiliência
-            e a capacidade de tomar decisões rápidas sob pressão — habilidades
-            que aplico diariamente na resolução de incidentes críticos de TI.
+            Active Directory e ERP TOTVS (Consinco).
+            <br />
+            <br />
+            Essa bagagem me permite ter uma visão 360° do ciclo de vida de um
+            software, desde a infraestrutura até a experiência do usuário final.
+            Diferencial Militar: Servi por 4 anos no Exército Brasileiro, onde
+            consolidei competências críticas de liderança, disciplina rigorosa,
+            resiliência e a capacidade de tomar decisões rápidas sob pressão —
+            habilidades que aplico diariamente na resolução de incidentes
+            críticos de TI.
+            <br />
+            <br />
             Foco Tecnológico & Desenvolvimento: Atualmente, direciono minha
             carreira para o desenvolvimento de soluções robustas, com foco nas
-            seguintes tecnologias: Back-end: C# / .NET, Java. Front-end:
-            React.js e JavaScript. Dados: SQL, NoSQL, Power BI e Ciência de
-            Dados (Pós-graduação em curso). DevOps/Ferramentas: Git,
-            Versionamento, JSON, Ambientes Virtualizados. Sou movido pela
-            resolução de problemas através da tecnologia e pela busca constante
-            de eficiência operacional. 🚀 Objetivo: Atuar como Desenvolvedor de
-            Software ou Analista de Sistemas, unindo minha experiência em
-            sustentação com a criação de novas soluções tecnológicas.
+            seguintes tecnologias:
+            <br />
+            <br />
+            Back-end: C# / .NET, Java.
+            <br />
+            <br />
+            Front-end: React.js e JavaScript.
+            <br />
+            <br />
+            Dados: SQL, NoSQL, Power BI e Ciência de Dados (Pós-graduação em
+            curso).
+            <br />
+            <br />
+            DevOps/Ferramentas: Git, Versionamento, JSON, Ambientes
+            Virtualizados. Sou movido pela resolução de problemas através da
+            tecnologia e pela busca constante de eficiência operacional. 🚀
+            Objetivo: Atuar como Desenvolvedor de Software ou Analista de
+            Sistemas, unindo minha experiência em sustentação com a criação de
+            novas soluções tecnológicas.
             <br />
             <br />
             Já desenvolvi em Java, Python, C e C++ em praticas universitárias
@@ -111,4 +127,3 @@ function App() {
     </div>
   );
 }
-export default App;
