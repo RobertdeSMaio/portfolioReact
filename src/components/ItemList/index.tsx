@@ -1,7 +1,11 @@
-import React from "react";
 import "./styles.css";
 
-function ItemList({ title, description }) {
+interface ItemProps {
+  title: string;
+  description: string;
+}
+
+export default function ItemList({ title, description }: ItemProps) {
   return (
     <div className="item-list">
       <strong>{title}</strong>
@@ -10,5 +14,3 @@ function ItemList({ title, description }) {
     </div>
   );
 }
-
-export { ItemList };
