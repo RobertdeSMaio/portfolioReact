@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Header } from "../../components/Header";
-import ItemList from "../../components/ItemList";
+import { Header } from "../../components/Header/index.tsx";
+import ItemList from "../../components/ItemList/index.tsx";
 import "./styles.css";
 
 function App() {
