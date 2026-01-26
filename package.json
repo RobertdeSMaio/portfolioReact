@@ -19,13 +19,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
     "formik": "^2.4.9",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-scripts": "^5.0.1",
+    "tailwind": "^2.3.1",
+    "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",
     "web-vitals": "^5.1.0"
   },
@@ -53,6 +55,8 @@
   "devDependencies": {
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
-    "typescript": "^5.9.3"
+    "@vitejs/plugin-react": "^5.1.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   }
 }

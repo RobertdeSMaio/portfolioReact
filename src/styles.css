@@ -1,7 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
+@import "tailwindcss";
+
+@theme {
+  /* No Tailwind v4, definimos variáveis assim: */
+  --color-brand-bg: #233338;
 }
-body {
-  background-color: #233338;
+
+/* Use a camada 'base' para resetar o body */
+@layer base {
+  body {
+    background-color: var(--color-brand-bg);
+    @apply antialiased;
+  }
+}
+
+/* Se quiser usar o @apply com a cor variável: */
+.bg-custom {
+  @apply bg-[--color-brand-bg];
 }
