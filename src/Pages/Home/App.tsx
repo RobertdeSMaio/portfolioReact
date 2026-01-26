@@ -64,18 +64,46 @@ export default function App() {
               <p>
                 Com uma trajetória sólida em TI e Infraestrutura, atuo na
                 resolução de problemas complexos, sustentação de sistemas e
-                apoio direto ao desenvolvimento.
-              </p>
-              <p>
-                Atualmente, na Ágape Consultoria e no Grupo Coutinho, foco em
-                garantir a estabilidade de produtos digitais através de testes
-                de QA, manipulação de JSON e suporte técnico especializado.
+                apoio direto ao desenvolvimento. Atualmente, na Ágape
+                Consultoria e no Grupo Coutinho, foco em garantir a estabilidade
+                de produtos digitais através de testes de QA, manipulação de
+                JSON e suporte técnico especializado.
               </p>
               <p>
                 Minha base técnica foi construída através de experiências em
                 Field Service, Automação e Administração de Redes, gerenciando
                 ambientes Windows/Linux, servidores e ferramentas como Active
-                Directory e ERP TOTVS (Consinco).
+                Directory e ERP TOTVS (Consinco). Essa bagagem me permite ter
+                uma visão 360° do ciclo de vida de um software, desde a
+                infraestrutura até a experiência do usuário final.
+              </p>
+              <p>
+                Diferencial Militar: Servi por 4 anos no Exército Brasileiro,
+                onde consolidei competências críticas de liderança, disciplina
+                rigorosa, resiliência e a capacidade de tomar decisões rápidas
+                sob pressão — habilidades que aplico diariamente na resolução de
+                incidentes críticos de TI.
+              </p>
+
+              <p>
+                Foco Tecnológico & Desenvolvimento: Atualmente, direciono minha
+                carreira para o desenvolvimento de soluções robustas, com foco
+                nas seguintes tecnologias:
+              </p>
+
+              <p>Back-end: C# / .NET, Java.</p>
+              <p>Front-end: React.js e JavaScript.</p>
+              <p>
+                Dados: SQL, NoSQL, Power BI e Ciência de Dados (Pós-graduação em
+                curso).
+              </p>
+              <p>
+                DevOps/Ferramentas: Git, Versionamento, JSON, Ambientes
+                Virtualizados.
+              </p>
+              <p>
+                Sou movido pela resolução de problemas através da tecnologia e
+                pela busca constante de eficiência operacional.
               </p>
 
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black italic">
