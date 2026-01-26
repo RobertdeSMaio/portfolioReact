@@ -1,7 +1,7 @@
 .conteudo {
   padding: 50px;
 
-  margin: 20px 10rem;
+  margin: 20px auto;
   display: flex;
 
   background-color: #ffffff;
@@ -11,7 +11,7 @@
   align-items: center;
   flex-flow: column;
 
-  max-width: 40rem;
+  max-width: 800px;
 }
 
 h3 {

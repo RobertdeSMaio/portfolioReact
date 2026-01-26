@@ -100,8 +100,10 @@ export default function App() {
             <br />
             DevOps/Ferramentas: Git, Versionamento, JSON, Ambientes
             Virtualizados. Sou movido pela resolução de problemas através da
-            tecnologia e pela busca constante de eficiência operacional. 🚀
-            Objetivo: Atuar como Desenvolvedor de Software ou Analista de
+            tecnologia e pela busca constante de eficiência operacional.
+            <br />
+            <br />
+            🚀 Objetivo: Atuar como Desenvolvedor de Software ou Analista de
             Sistemas, unindo minha experiência em sustentação com a criação de
             novas soluções tecnológicas.
             <br />
