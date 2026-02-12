@@ -7,6 +7,7 @@ interface Repo {
   id: number;
   name: string;
   description: string;
+  html_url: string;
 }
 
 export default function App() {
@@ -128,8 +129,10 @@ export default function App() {
                     className="hover:translate-x-2 transition-transform"
                   >
                     <ItemList
+                      key={repo.id}
                       title={repo.name}
                       description={repo.description}
+                      url={repo.html_url}
                     />
                   </div>
                 ))}
