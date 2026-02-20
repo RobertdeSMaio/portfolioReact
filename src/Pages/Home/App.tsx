@@ -48,7 +48,7 @@ export default function App() {
     <div className="relative min-h-screen bg-[#233338] flex flex-col">
       <Header />
 
-      <main className="relative z-10 flex-1 w-full bg-[#233338] pb-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+      <main className="relative z-10 flex-1 w-full bg-[#233338] pb-10 grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <section className="flex flex-col items-center">
             <img
