@@ -115,7 +115,8 @@ export default function App() {
               </div>
             </article>
           </section>
-
+        </div>
+        <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <hr className="my-12 border-gray-200" />
 
           {repos?.length > 0 && (
