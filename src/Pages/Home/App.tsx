@@ -48,8 +48,8 @@ export default function App() {
     <div className="relative min-h-screen bg-[#233338] flex flex-col">
       <Header />
 
-      <main className="relative z-10 flex-1 w-full bg-[#233338] pb-10">
-        <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
+      <main className="relative z-10 flex-1 w-full bg-[#233338] pb-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <section className="flex flex-col items-center">
             <img
               className="h-32 w-32 border-2 border-black rounded-full object-cover mb-6 shadow-md"
@@ -124,7 +124,7 @@ export default function App() {
               <h4 className="text-3xl font-bold text-black text-center mb-8">
                 Repositórios GitHub
               </h4>
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {repos.map((repo) => (
                   <div
                     key={repo.id}
