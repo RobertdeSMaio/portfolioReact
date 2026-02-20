@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import img from "../../Assets/1766494627948.png";
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import ItemList from "../../components/ItemList";
@@ -52,7 +53,7 @@ export default function App() {
           <section className="flex flex-col items-center">
             <img
               className="h-32 w-32 border-2 border-black rounded-full object-cover mb-6 shadow-md"
-              src="https://media.licdn.com/dms/image/v2/D5603AQFkWpZRbrM8Kw/profile-displayphoto-crop_800_800/B56ZtLSOLzIcAI-/0/1766494627857?e=1770854400&v=beta&t=Mldtp2Ll3pRPBf8JIEjD4kyA4pvvz4uDyVaYvd7XkIA"
+              src={img}
               alt="profileImg"
             />
             <h3 className="text-3xl font-bold text-black mb-8">Sobre Mim</h3>
