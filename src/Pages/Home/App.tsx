@@ -124,7 +124,7 @@ export default function App() {
               <h4 className="text-3xl font-bold text-black text-center mb-8">
                 Repositórios GitHub
               </h4>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 {repos.map((repo) => (
                   <div
                     key={repo.id}
