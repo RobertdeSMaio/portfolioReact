@@ -45,10 +45,10 @@ export default function App() {
   if (error) return <div className="text-red-500 p-10">Erro: {error}</div>;
 
   return (
-    <div className="relative min-h-screen bg-[#233338] flex flex-col">
+    <div className="relative min-h-screen bg-brand-bg flex flex-col">
       <Header />
 
-      <main className="relative z-10 flex-1 w-full bg-[#233338] pb-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+      <main className="relative z-10 flex-1 w-full bg-brand-bg pb-10 grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <section className="flex flex-col items-center">
             <img
@@ -59,11 +59,11 @@ export default function App() {
             <h3 className="text-3xl font-bold text-black mb-8">Sobre Mim</h3>
 
             <article className="text-gray-800 leading-relaxed text-justify space-y-6">
-              <p>
+              <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Olá, sou <strong>Robert</strong>, atualmente busco aumentar meu
                 conhecimento pelo mundo da tecnologia.
               </p>
-              <p>
+              <p className=" arial hover:transition-transform duration-100 hover:translate-x-2">
                 Com uma trajetória sólida em TI e Infraestrutura, atuo na
                 resolução de problemas complexos, sustentação de sistemas e
                 apoio direto ao desenvolvimento. Atualmente, na Ágape
@@ -71,7 +71,7 @@ export default function App() {
                 de produtos digitais através de testes de QA, manipulação de
                 JSON e suporte técnico especializado.
               </p>
-              <p>
+              <p className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Minha base técnica foi construída através de experiências em
                 Field Service, Automação e Administração de Redes, gerenciando
                 ambientes Windows/Linux, servidores e ferramentas como Active
@@ -79,7 +79,7 @@ export default function App() {
                 uma visão 360° do ciclo de vida de um software, desde a
                 infraestrutura até a experiência do usuário final.
               </p>
-              <p>
+              <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Diferencial Militar: Servi por 4 anos no Exército Brasileiro,
                 onde consolidei competências críticas de liderança, disciplina
                 rigorosa, resiliência e a capacidade de tomar decisões rápidas
@@ -87,28 +87,32 @@ export default function App() {
                 incidentes críticos de TI.
               </p>
 
-              <p>
+              <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Foco Tecnológico & Desenvolvimento: Atualmente, direciono minha
                 carreira para o desenvolvimento de soluções robustas, com foco
                 nas seguintes tecnologias:
               </p>
 
-              <p>Back-end: C# / .NET, Java.</p>
-              <p>Front-end: React.js e JavaScript.</p>
-              <p>
+              <p className="arial hover:transition-transform duration-100 hover:translate-x-2">
+                Back-end: C# / .NET, Java.
+              </p>
+              <p className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
+                Front-end: React.js e JavaScript.
+              </p>
+              <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Dados: SQL, NoSQL, Power BI e Ciência de Dados (Pós-graduação em
                 curso).
               </p>
-              <p>
+              <p className=" arial hover:transition-transform duration-100 hover:translate-x-2">
                 DevOps/Ferramentas: Git, Versionamento, JSON, Ambientes
                 Virtualizados.
               </p>
-              <p>
+              <p className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Sou movido pela resolução de problemas através da tecnologia e
                 pela busca constante de eficiência operacional.
               </p>
 
-              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black italic">
+              <div className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
                 <strong>Objetivo:</strong> Atuar como Desenvolvedor de Software
                 ou Analista de Sistemas, unindo minha experiência em sustentação
                 com a criação de novas soluções tecnológicas.
@@ -116,7 +120,36 @@ export default function App() {
             </article>
           </section>
         </div>
+
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
+          <div>
+            <h4 className="text-3xl font-bold text-black text-center mb-8">
+              Projetos em construção
+            </h4>
+            <div className="grid grid-cols-2 gap-4">
+              <a
+                href="https://github.com/RobertdeSMaio/sistema-notificacao-escolar-front"
+                className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                  sistema-notificacao-escolar-front
+                </strong>
+              </a>
+
+              <a
+                href="https://github.com/RobertdeSMaio/investdash"
+                className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                  InvestDash
+                </strong>
+              </a>
+            </div>
+          </div>
           <hr className="my-12 border-gray-200" />
 
           {repos?.length > 0 && (
