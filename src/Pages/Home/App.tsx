@@ -11,11 +11,14 @@ interface Repo {
   html_url: string;
 }
 
+const REPOS_PER_PAGE = 9;
+
 export default function App() {
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const username = "RobertdeSMaio";
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleGetData = async () => {
     try {
@@ -36,18 +39,28 @@ export default function App() {
     handleGetData();
   }, []);
 
+  const totalPages = Math.ceil(repos.length / REPOS_PER_PAGE);
+  const paginatedRepos = repos.slice(
+    (currentPage - 1) * REPOS_PER_PAGE,
+    currentPage * REPOS_PER_PAGE,
+  );
+
   if (loading)
     return (
-      <div className="flex h-screen items-center justify-center text-white">
-        Carregando...
+      <div className="flex items-center justify-center min-h-screen bg-slate-50">
+        <div className="text-center space-y-3">
+          <div className="w-10 h-10 border-4 border-black border-t-transparent rounded-full animate-spin mx-auto" />
+          <p className="text-slate-500 text-sm">Carregando...</p>
+        </div>
       </div>
     );
+
   if (error) return <div className="text-red-500 p-10">Erro: {error}</div>;
 
   return (
     <div className="relative min-h-screen bg-brand-bg flex flex-col">
       <Header />
-
+      {/* Parte da apresentação */}
       <main className="relative z-10 flex-1 w-full bg-brand-bg pb-10 grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <section className="flex flex-col items-center">
@@ -120,7 +133,7 @@ export default function App() {
             </article>
           </section>
         </div>
-
+        {/* Parte de projetos */}
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <div>
             <h4 className="text-3xl font-bold text-black text-center mb-8">
@@ -136,6 +149,14 @@ export default function App() {
                 <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
                   Sistema escolar
                 </strong>
+              </a>
+              <a
+                href="https://github.com/RobertdeSMaio/Desafio-Jitterbit-API-de-Pedidos"
+                className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Desafio Jitterbit - API de Pedidos</strong>
               </a>
             </div>
           </div>
@@ -165,7 +186,7 @@ export default function App() {
                 Repositórios GitHub
               </h4>
               <div className="grid grid-cols-3 gap-4">
-                {repos.map((repo) => (
+                {paginatedRepos.map((repo) => (
                   <div
                     key={repo.id}
                     className="hover:translate-x-2 transition-transform"
@@ -179,6 +200,47 @@ export default function App() {
                   </div>
                 ))}
               </div>
+
+              {/* Paginação */}
+              {totalPages > 1 && (
+                <div className="flex items-center justify-center gap-2 mt-8">
+                  <button
+                    onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                    disabled={currentPage === 1}
+                    className="px-3 py-1 rounded=lg border border-gray text-sm font-medium text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition"
+                  >
+                    ← Anterior
+                  </button>
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                    (page) => (
+                      <button
+                        key={page}
+                        onClick={() => setCurrentPage(page)}
+                        className={`w-8 h-8 rounded-lg text-sm font-medium transition ${
+                          currentPage === page
+                            ? "bg-black text-white"
+                            : "border border-gray-300 text-gray-600 hover:bg-gray-100"
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    ),
+                  )}
+                  <button
+                    onClick={() =>
+                      setCurrentPage((p) => Math.min(p + 1, totalPages))
+                    }
+                    disabled={currentPage === totalPages}
+                    className="px-3 py-1 rounded-lg border border-gray-300 text-sm font-medium text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition"
+                  >
+                    Próximo →
+                  </button>
+                </div>
+              )}
+              <p className="text-center text-sm text-gray-400 mt-3">
+                Página {currentPage} de {totalPages} · {repos.length}{" "}
+                repositórios
+              </p>
             </section>
           )}
         </div>
