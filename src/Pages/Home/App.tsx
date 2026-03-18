@@ -107,7 +107,7 @@ export default function App() {
               </p>
 
               <p className="arial hover:transition-transform duration-100 hover:translate-x-2">
-                Back-end: C# / .NET, Java.
+                Back-end: C# / .NET.
               </p>
               <p className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
                 Front-end: React.js e JavaScript.
