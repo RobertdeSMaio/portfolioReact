@@ -137,7 +137,25 @@ export default function App() {
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <div>
             <h4 className="text-3xl font-bold text-black text-center mb-8">
-              Projetos em Finalizado
+              Projetos em construção
+            </h4>
+            <div className="grid grid-cols-3 gap-4">
+              <a
+                href="https://github.com/RobertdeSMaio/investdash"
+                className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                  InvestDash
+                </strong>
+              </a>
+            </div>
+          </div>
+          <hr className="my-12 border-gray-200" />
+          <div>
+            <h4 className="text-3xl font-bold text-black text-center mb-8">
+              Projetos Finalizados
             </h4>
             <div className="grid grid-cols-3 gap-4">
               <a
@@ -157,24 +175,6 @@ export default function App() {
                 rel="noopener noreferrer"
               >
                 <strong>Desafio Jitterbit - API de Pedidos</strong>
-              </a>
-            </div>
-          </div>
-          <hr className="my-12 border-gray-200" />
-          <div>
-            <h4 className="text-3xl font-bold text-black text-center mb-8">
-              Projetos em construção
-            </h4>
-            <div className="grid grid-cols-3 gap-4">
-              <a
-                href="https://github.com/RobertdeSMaio/investdash"
-                className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
-                  InvestDash
-                </strong>
               </a>
             </div>
           </div>
