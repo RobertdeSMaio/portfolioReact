@@ -120,16 +120,6 @@ export default function App() {
                 DevOps/Ferramentas: Git, Versionamento, JSON, Ambientes
                 Virtualizados.
               </p>
-              <p className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
-                Sou movido pela resolução de problemas através da tecnologia e
-                pela busca constante de eficiência operacional.
-              </p>
-
-              <div className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
-                <strong>Objetivo:</strong> Atuar como Desenvolvedor de Software
-                ou Analista de Sistemas, unindo minha experiência em sustentação
-                com a criação de novas soluções tecnológicas.
-              </div>
             </article>
           </section>
         </div>
