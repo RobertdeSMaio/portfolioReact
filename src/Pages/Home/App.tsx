@@ -149,6 +149,16 @@ export default function App() {
             </h4>
             <div className="grid grid-cols-3 gap-4">
               <a
+                href="https://github.com/RobertdeSMaio/pokedex_flutter"
+                className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                  Teste Grupo Carone - PokeDex
+                </strong>
+              </a>
+              <a
                 href="https://github.com/RobertdeSMaio/sistema-notificacao-escolar-front"
                 className="hover:bg-gray-50 p-4 rounded-lg border border-transparent hover:border-gray-200 transition-transform duration-300 hover:translate-x-2"
                 target="_blank"
