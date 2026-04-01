@@ -136,7 +136,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                <strong className="block text-2xl text-black mb-2 hover:text-blue-600">
                   InvestDash
                 </strong>
               </a>
@@ -154,7 +154,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                <strong className="block text-2xl text-black mb-2 hover:text-blue-600">
                   Teste Grupo Carone - PokeDex
                 </strong>
               </a>
@@ -164,7 +164,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <strong className="block text-2xl text-black mb-2 group-hover:text-blue-600">
+                <strong className="block text-2xl text-black mb-2 hover:text-blue-600">
                   Sistema escolar
                 </strong>
               </a>
@@ -174,7 +174,9 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <strong>Desafio Jitterbit - API de Pedidos</strong>
+                <strong className="block text-2xl text-black mb-2 hover:text-blue-600">
+                  Desafio Jitterbit - API de Pedidos
+                </strong>
               </a>
             </div>
           </div>
