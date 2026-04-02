@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import img from "../../Assets/1766494627948.png";
-import { Footer } from "../../components/Footer/Footer";
-import { Header } from "../../components/Header/Header";
 import ItemList from "../../components/ItemList";
 
 interface Repo {
@@ -13,7 +11,7 @@ interface Repo {
 
 const REPOS_PER_PAGE = 9;
 
-export default function App() {
+export default function English() {
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -59,8 +57,6 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-brand-bg flex flex-col">
-      <Header />
-      {/* Parte da apresentação */}
       <main className="relative z-10 flex-1 w-full bg-brand-bg pb-10 grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <section className="flex flex-col items-center">
@@ -73,37 +69,37 @@ export default function App() {
 
             <article className="text-gray-800 leading-relaxed text-justify space-y-6">
               <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
-                Olá, sou <strong>Robert</strong>, atualmente busco aumentar meu
-                conhecimento pelo mundo da tecnologia.
+                Hi, I'm <strong>Robert</strong>, I'm actually looking to improve
+                my knowledge of the tech world.
               </p>
               <p className=" arial hover:transition-transform duration-100 hover:translate-x-2">
-                Com uma trajetória sólida em TI e Infraestrutura, atuo na
-                resolução de problemas complexos, sustentação de sistemas e
-                apoio direto ao desenvolvimento. Atualmente, na Ágape
-                Consultoria e no Grupo Coutinho, foco em garantir a estabilidade
-                de produtos digitais através de testes de QA, manipulação de
-                JSON e suporte técnico especializado.
+                With a solid background in IT Infrastructure and Systems
+                Sustainability, I specialize in complex problem-solving, system
+                maintenance, and providing direct support to development teams.
+                Currently, at Ágape Consultoria and Grupo Coutinho, I focus on
+                ensuring software stability through QA testing, JSON
+                manipulation, and specialized technical support.
               </p>
               <p className=" arial  hover:transition-transform duration-100 hover:translate-x-2">
-                Minha base técnica foi construída através de experiências em
-                Field Service, Automação e Administração de Redes, gerenciando
-                ambientes Windows/Linux, servidores e ferramentas como Active
-                Directory e ERP TOTVS (Consinco). Essa bagagem me permite ter
-                uma visão 360° do ciclo de vida de um software, desde a
-                infraestrutura até a experiência do usuário final.
+                My technical foundation was built through extensive experience
+                in Field Service, Automation, and Network Administration,
+                managing Windows/Linux environments, servers, and enterprise
+                tools such as Active Directory and TOTVS (Consinco) ERP. This
+                background allows me to have a 360° view of the software
+                lifecycle, from infrastructure to the end-user experience.
               </p>
               <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
-                Diferencial Militar: Servi por 4 anos no Exército Brasileiro,
-                onde consolidei competências críticas de liderança, disciplina
-                rigorosa, resiliência e a capacidade de tomar decisões rápidas
-                sob pressão — habilidades que aplico diariamente na resolução de
-                incidentes críticos de TI.
+                Military Background: I served for 4 years in the Brazilian Army,
+                where I consolidated critical soft skills: leadership, rigorous
+                discipline, resilience, and the ability to make rapid decisions
+                under pressure—skills I apply daily when handling critical IT
+                incidents.
               </p>
 
               <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
-                Foco Tecnológico & Desenvolvimento: Atualmente, direciono minha
-                carreira para o desenvolvimento de soluções robustas, com foco
-                nas seguintes tecnologias:
+                Technical Focus & Development: Currently, I am pivoting my
+                career toward building robust technological solutions, focusing
+                on the following stack:
               </p>
 
               <p className="arial hover:transition-transform duration-100 hover:translate-x-2">
@@ -113,21 +109,20 @@ export default function App() {
                 Front-end: React.js e JavaScript.
               </p>
               <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
-                Dados: SQL, NoSQL, Power BI e Ciência de Dados (Pós-graduação em
-                curso).
+                Data: SQL, NoSQL, Power BI, Data Science and Python
+                (Post-graduate studies in progress);
               </p>
               <p className=" arial hover:transition-transform duration-100 hover:translate-x-2">
-                DevOps/Ferramentas: Git, Versionamento, JSON, Ambientes
-                Virtualizados.
+                DevOps & Tools: Git, Versioning, JSON, and Virtualized
+                Environments.
               </p>
             </article>
           </section>
         </div>
-        {/* Parte de projetos */}
         <div className="max-w-4xl mx-auto bg-white p-6 md:p-12 mt-10 rounded-xl shadow-2xl">
           <div>
             <h4 className="text-3xl font-bold text-black text-center mb-8">
-              Projetos em construção
+              In Progress
             </h4>
             <div className="grid grid-cols-3 gap-4">
               <a
@@ -145,7 +140,7 @@ export default function App() {
           <hr className="my-12 border-gray-200" />
           <div>
             <h4 className="text-3xl font-bold text-black text-center mb-8">
-              Projetos Finalizados
+              Finished Projects
             </h4>
             <div className="grid grid-cols-3 gap-4">
               <a
@@ -165,7 +160,7 @@ export default function App() {
                 rel="noopener noreferrer"
               >
                 <strong className="block text-2xl text-black mb-2 hover:text-blue-600">
-                  Sistema escolar
+                  School System
                 </strong>
               </a>
               <a
@@ -175,7 +170,7 @@ export default function App() {
                 rel="noopener noreferrer"
               >
                 <strong className="block text-2xl text-black mb-2 hover:text-blue-600">
-                  Desafio Jitterbit - API de Pedidos
+                  Jitterbit challenge - Order API
                 </strong>
               </a>
             </div>
@@ -185,7 +180,7 @@ export default function App() {
           {repos?.length > 0 && (
             <section>
               <h4 className="text-3xl font-bold text-black text-center mb-8">
-                Repositórios GitHub
+                GitHub Repos
               </h4>
               <div className="grid grid-cols-3 gap-4">
                 {paginatedRepos.map((repo) => (
@@ -203,7 +198,6 @@ export default function App() {
                 ))}
               </div>
 
-              {/* Paginação */}
               {totalPages > 1 && (
                 <div className="flex items-center justify-center gap-2 mt-8">
                   <button
@@ -211,7 +205,7 @@ export default function App() {
                     disabled={currentPage === 1}
                     className="px-3 py-1 rounded-lg border border-gray-300 text-sm font-medium text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition"
                   >
-                    ← Anterior
+                    ← Previous
                   </button>
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map(
                     (page) => (
@@ -235,20 +229,17 @@ export default function App() {
                     disabled={currentPage === totalPages}
                     className="px-3 py-1 rounded-lg border border-gray-300 text-sm font-medium text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition"
                   >
-                    Próximo →
+                    Next →
                   </button>
                 </div>
               )}
               <p className="text-center text-sm text-gray-400 mt-3">
-                Página {currentPage} de {totalPages} · {repos.length}{" "}
-                repositórios
+                Page {currentPage} of {totalPages} · {repos.length} Repos
               </p>
             </section>
           )}
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

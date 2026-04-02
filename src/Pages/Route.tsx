@@ -1,36 +1,34 @@
-import {
-  BrowserRouter,
-  Outlet,
-  Route,
-  Routes as RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
-import App from "./Home/App";
+import English from "./Home/english-page";
+import Portugues from "./Home/portuguese-page";
 
 const Layout = () => {
   return (
-    <div className="flex h-screen w-full overflow-hidden">
-      <Header />
+    <div className="flex flex-col h-screen w-full overflow-hidden">
       <main className="flex-1 overflow-y-auto bg-slate-100">
+        <Header />
         <Outlet />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 };
 
-export default function Routes() {
-  <BrowserRouter>
-    <RouterProvider>
-      <Route element={<Layout />}>
-        <Route path="/" element={<App />} />
-      </Route>
-      ;
-      <Route
-        path="*"
-        element={<h1>Página não encontrada! Verifique a URL.</h1>}
-      />
-    </RouterProvider>
-  </BrowserRouter>;
+export default function Routess() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/portugues" element={<Portugues />} />
+          <Route path="/" element={<English />} />
+        </Route>
+        <Route
+          path="*"
+          element={<h1>Página não encontrada! Verifique a URL.</h1>}
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }

@@ -1,3 +1,4 @@
+import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../../Assets/image.png";
 
 interface HeaderProp {
@@ -5,20 +6,14 @@ interface HeaderProp {
   children: string;
 }
 
-const NavLink = ({ href, children }: HeaderProp) => (
-  <li>
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer noopener"
-      className="hover:text-blue-600 transition-colors"
-    >
-      {children}
-    </a>
-  </li>
-);
-
 function Header() {
+  const nav = useNavigate();
+  const loc = useLocation();
+
+  const toggleLanguage = () => {
+    const nextRoute = loc.pathname === "/portugues" ? "/" : "/portugues";
+    nav(nextRoute);
+  };
   return (
     <header className="w-full h-13 bg-white rounded-[20px] flex items-center">
       <nav className="flex w-full items-center justify-between px-5">
@@ -31,7 +26,7 @@ function Header() {
               rel="noreferrer noopener"
               className="hover:text-blue-600 transition-colors"
             >
-              Contato
+              {loc.pathname === "/portugues" ? "Contato" : "Contact"}
             </a>
           </li>
           <li>
@@ -41,7 +36,7 @@ function Header() {
               rel="noreferrer noopener"
               className="hover:text-blue-600 transition-colors"
             >
-              Sobre
+              {loc.pathname === "/portugues" ? "Linkedin" : "Linkedin"}
             </a>
           </li>
           <li>
@@ -51,8 +46,18 @@ function Header() {
               rel="noreferrer noopener"
               className="hover:text-blue-600 transition-colors"
             >
-              GitHub
+              {loc.pathname === "/portugues" ? "Github" : "Github"}
             </a>
+          </li>
+          <li>
+            <button
+              onClick={toggleLanguage}
+              className="text-black rounded hover:text-blue-600 transition-transform"
+            >
+              {loc.pathname === "/portugues"
+                ? "Switch to English"
+                : "Mudar para Portugues"}
+            </button>
           </li>
         </ul>
       </nav>
