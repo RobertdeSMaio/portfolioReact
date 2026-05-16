@@ -21,7 +21,7 @@ function Header() {
         <ul className="flex items-center gap-5 list-none text-black">
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=22992843155"
+              href="https://api.whatsapp.com/send?phone=22974068884"
               target="_blank"
               rel="noreferrer noopener"
               className="hover:text-blue-600 transition-colors"
@@ -66,3 +66,4 @@ function Header() {
 }
 
 export { Header };
+
