@@ -65,7 +65,7 @@ export default function English() {
               src={img}
               alt="profileImg"
             />
-            <h3 className="text-3xl font-bold text-black mb-8">Sobre Mim</h3>
+            <h3 className="text-3xl font-bold text-black mb-8">About me</h3>
 
             <article className="text-gray-800 leading-relaxed text-justify space-y-6">
               <p className="arial  hover:transition-transform duration-100 hover:translate-x-2">
